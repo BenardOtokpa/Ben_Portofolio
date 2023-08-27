@@ -72,8 +72,8 @@ const Home = () => {
             Resume
           </Link>
         </div >
-        <div >
-        <Logo  />
+        <div className='logo-container'>
+        <Logo className='svg' />
         </div>
       </div>
       <Loader type="pacman" />

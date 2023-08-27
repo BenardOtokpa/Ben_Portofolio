@@ -136,9 +136,9 @@
   }
 }
 .hamburger-icon,
-     .close-icon {
-        display: none;
-     }
+.close-icon {
+  display: none;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -152,7 +152,7 @@
       display: none;
      }
      .logo img{
-      height: 24px; /* Adjust the height to match the hamburger icon */
+      height: 25px; /* Adjust the height to match the hamburger icon */
       width: auto;
       min-height: auto;
      }
@@ -183,7 +183,7 @@
         opacity: 1;
         position: initial;
         width: auto;
-        margin-left: 10PX;
+        margin-left: 10px;
       }
 
       a svg {
@@ -200,3 +200,4 @@
      }
   }
 }
+

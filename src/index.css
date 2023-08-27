@@ -1,7 +1,3 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
 html {
   font-size: 62.5%;
 }
@@ -15,4 +11,10 @@ body {
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (max-width: 1200) {
+  body{
+    overflow: visible;
+  }
 }

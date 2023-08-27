@@ -3,6 +3,8 @@ import LogoS from '../../../assets/images/Programming (1).gif'
 import loop from '../../../assets/images/Programming.gif'
 import './index.scss'
 import { useEffect } from 'react'
+import logo from '../../../assets/images/Developer activity.gif'
+
 
 const Logo = () => {
   const [showEntranceAnimation, setShowEntranceAnimation] = useState(true)
@@ -24,6 +26,9 @@ const Logo = () => {
       ) : (
         <img className="looping" src={loop} alt="Looping Animation" />
       )}
+      {/* <div className='svg-logo'>
+        <img src={logo} alt='logo2'/>
+      </div> */}
     </div>
   )
 }
