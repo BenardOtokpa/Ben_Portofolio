@@ -1,15 +1,11 @@
 import { useEffect, useState } from 'react'
 import './index.scss'
 import { Link } from 'react-router-dom'
-// import Loader from 'react-loaders'
 
 import LogoTitle from '../../assets/images/logo-B.png'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
 import Loader from 'react-loaders'
-import FullScreenSection from '../FullScreen'
-
-// import { Stack } from 'react-bootstrap'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -47,7 +43,6 @@ const Home = () => {
 
   return (
     <>
-    <FullScreenSection>
       <div className="container home-page">
         <div className="text-zone">
           <h1>
@@ -78,11 +73,11 @@ const Home = () => {
           </Link>
         </div >
         <div >
-        <Logo />
+        <Logo  />
         </div>
       </div>
       <Loader type="pacman" />
-      </FullScreenSection>
+
     </>
   )
 }
