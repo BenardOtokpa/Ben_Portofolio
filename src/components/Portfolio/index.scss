@@ -1,0 +1,132 @@
+.About-header {
+  // background-color: red;
+  width: 82%;
+  height: 100%;
+  margin-left: 180px;
+  overflow-y: auto;
+
+  .text-zone {
+    position: absolute;
+    left: 5%;
+    top: 11%;
+    transform: translateY(-50%);
+    width: 40%;
+    max-height: 90%;
+  }
+
+  h1 {
+    color: #07bcfb;
+    font-size: 40px;
+    line-height: 53px;
+    margin: 0;
+    font-family: 'Coolvetica';
+    font-weight: 400;
+
+    &:before {
+      content: '<h1>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #fd5c5c;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -20px;
+      left: -30px;
+      opacity: 0.6;
+    }
+
+    &:after {
+      content: '<h1/>';
+      font-family: 'La Belle Aurore', cursive;
+      color: #fd5c5c;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 10px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
+  }
+}
+.po_items_ho {
+  margin-left: 150px;
+  margin-top: 100px;
+  column-width: 19em;
+  -moz-column-width: 15em;
+  -webkit-column-width: 15em;
+  column-gap: 49rem;
+  -moz-column-gap: 4rem;
+  -webkit-column-gap: 4rem;
+}
+
+.po_item {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 0.5rem auto;
+  position: relative;
+  background: wheat;
+  padding: 6px;
+  border: 1px solid burlywood;
+  transition: 0.3s ease;
+  font-size: 0;
+  min-height: 200px;
+}
+
+.po_item img {
+  max-width: 100%;
+}
+
+.po_item .content {
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #436a85;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
+  border: 1px solid black;
+}
+
+.po_item .content {
+  opacity: 0;
+  transition-delay: 1s;
+  transition: 0.3s ease;
+  font-size: 20px;
+}
+
+.po_item:hover {
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.po_item:hover .content {
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  opacity: 1;
+}
+
+.po_item:hover .content {
+  opacity: 1;
+  color: #fff;
+}
+
+.po_item .content a {
+  background: #fd5c5c;
+  border: solid 1px #fff;
+  padding: 4px 8px;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.po_item .content a:hover {
+  text-decoration: none;
+}
+ 
