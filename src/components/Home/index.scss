@@ -106,10 +106,10 @@
     display: none;
   }
   .home-page{
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     // flex-wrap: wrap;
-    flex-shrink: initial;
+    // flex-shrink: initial;
 
     .text-zone {
       position: initial;
@@ -128,7 +128,7 @@
       
       h1::after {
          font-size: 16px;
-         left: 5px;
+         left: 0px;
          top: 150px;
        }
       h1::before {
@@ -151,19 +151,16 @@
       width: 125px;
     }
     .logo-container{
-      // position: relative;
-      // width: 50%;
-      // height: auto;
-      // box-sizing: border-box;
-      // margin: auto;
-      display: none;
+  //     position: initial;
+  //     width: 100%;
+  //     height: auto;
+  //     box-sizing: border-box;
+  //     margin: auto;
       
       
-      
+  display: none;
     }
-    .svg-logo {
-      display: block;
-    }
+    
   }
 
 }
