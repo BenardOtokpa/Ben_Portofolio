@@ -1,34 +1,75 @@
+import javascript from './assets/images/javascript.png'
+// import aws from './assets/images/aws.png'
+import css from './assets/images/css.png'
+import firebase from './assets/images/firebase.png'
+import flutter from './assets/images/flutter.png'
+import git from './assets/images/git.jpg'
+// import github from './assets/images/github1.png'
+import html from './assets/images/html.png'
+import mongo from './assets/images/mongo.png'
+import nextjs from './assets/images/nextjs.png'
+import node from './assets/images/node.png'
+import tailwind from './assets/images/tailwind.png'
+import react from './assets/images/react.png'
+
+
 const skills = [
   {
     id:1,
     name: 'Javascript',
-    percentage: 90,
+    Image:javascript
   },
   {
-    id: 2,
+    id:2,
     name: 'React',
-    percentage: 85,
+    Image: react
   },
-  { 
-    id: 3,
+  {
+    id:3,
     name: 'Node',
-    percentage: 85,
+    Image: node
   },
   {
-    id: 4,
-    name: 'PHP',
-    percentage: 75,
+    id:4,
+    name: 'Tailwind CSS',
+    Image: tailwind
   },
   {
-    id: 5,
-    name: 'Python',
-    percentage: 70,
+    id:5,
+    name: 'HTML5',
+    Image: html
   },
   {
-    id: 6,
+    id:6,
+    name: 'CSS',
+    Image: css
+    },
+  {
+    id:7,
+    name: 'Git',
+    Image: git
+  },
+  {
+    id:8,
+    name: 'Firebase',
+    Image: firebase
+  },
+  {
+    id:10,
     name: 'Flutter',
-    percentage: 75,
+    Image: flutter
   },
+  {
+    id:11,
+    name: 'MongoDB',
+    Image: mongo
+  },
+  {
+    id:12,
+    name: 'NextJs',
+    Image: nextjs
+  },
+  
 ]
 
 const services = [

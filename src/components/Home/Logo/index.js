@@ -3,11 +3,12 @@ import LogoS from '../../../assets/images/Programming (1).gif'
 import loop from '../../../assets/images/Programming.gif'
 import './index.scss'
 import { useEffect } from 'react'
-// import logo from '../../../assets/images/Developer activity.gif'
+import logo from '../../../assets/images/Developer activity.gif'
 
 
 const Logo = () => {
   const [showEntranceAnimation, setShowEntranceAnimation] = useState(true)
+  const isMobile = 700
 
   useEffect(() => {
     // Start the looping animation after 3 seconds
@@ -21,11 +22,12 @@ const Logo = () => {
 
   return (
     <div className="logo-container">
-      {showEntranceAnimation ? (
+      {(window.innerWidth > isMobile)?(showEntranceAnimation ? (
         <img className="entrance" src={LogoS} alt="Entrance Animation" />
       ) : (
         <img className="looping" src={loop} alt="Looping Animation" />
-      )}
+      )) : <img src={logo} alt='reactComponent'/>
+    }
     </div>
   )
 }
