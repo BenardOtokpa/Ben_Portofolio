@@ -11,6 +11,7 @@ import nextjs from './assets/images/nextjs.png'
 import node from './assets/images/node.png'
 import tailwind from './assets/images/tailwind.png'
 import react from './assets/images/react.png'
+import photoGallery from './assets/images/Screenshot 2023-08-09 034343.png'
 
 
 const skills = [
@@ -104,7 +105,7 @@ const dataportfolio = [
     link: '#',
   },
   {
-    img: 'https://picsum.photos/400/?grayscale',
+    img: photoGallery,
     description:
       'The wisdom of life consists in the elimination of non-essentials.',
     link: '#',
