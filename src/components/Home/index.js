@@ -5,10 +5,11 @@ import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/logo-B.png'
 import AnimatedLetters from '../AnimatedLetters'
 import Logo from './Logo'
-import Loader from 'react-loaders'
+// import { LinneardLoader } from 'react-loaders-kit'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  // const [isLoading, setIsLoading] = useState(true)
 
   const nameArray = ['e', 'n', 'a', 'r', 'd',',']
   const jobArray = [
@@ -68,13 +69,14 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             Contact Me
           </Link>
-          <Link to="https://drive.google.com/file/d/1LbnDqDD26IdJBczGPEP-qGEGcnW-rutq/view?usp=drive_link" className="resume">
+          <Link to="https://drive.google.com/u/0/uc?id=1LbnDqDD26IdJBczGPEP-qGEGcnW-rutq&export=download" download className="resume">
             Resume
           </Link>
         </div >
         <Logo className='.logo=container' />
       </div>
-      <Loader type="pacman" />
+
+      {/* <LinneardLoader loading={isLoading} size={600}duration={0.5}/> */}
 
     </>
   )

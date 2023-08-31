@@ -175,8 +175,10 @@
 
       a {
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
+        margin-left: 16px;
+        margin-top: 5px;
       }
 
       a:after {
