@@ -127,6 +127,14 @@
         padding: 20px;
         box-sizing: border-box;
         
+
+        h1::before{
+          margin-left: 25px;
+        }
+        h1::after{
+          margin-top: 10px;
+          margin-left: 50px;
+        }
       }
     }
   }
