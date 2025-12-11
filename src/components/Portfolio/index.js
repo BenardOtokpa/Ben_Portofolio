@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import './index.scss'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import { Col, Container, Row } from 'react-bootstrap'
-import { dataportfolio, meta } from '../../content_option'
+import { meta } from '../../content_option'
 import AnimatedLetters from '../AnimatedLetters'
+import EmblaCarousel from './EmblaCarousel'
+import { SLIDE } from '../../utils/const'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -16,6 +18,9 @@ const Portfolio = () => {
       clearTimeout(timer)
     }
   }, [])
+  const OPTIONS = {}
+  const SLIDE_COUNT = 6
+  const SLIDES = SLIDE
 
   return (
     <HelmetProvider>
@@ -29,7 +34,6 @@ const Portfolio = () => {
           <Col lg="8">
             <div className="text-zone">
               <h1 className="display-4 mb-4">
-               
                 <AnimatedLetters
                   letterClass={letterClass}
                   strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
@@ -38,21 +42,11 @@ const Portfolio = () => {
               </h1>
               <hr className="t_border my-4 ml-0 text-left" />
             </div>
+            <div className="embla-wrapper">
+              <EmblaCarousel slides={SLIDES} options={OPTIONS} />
+            </div>
           </Col>
         </Row>
-        <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>view project</a>
-                </div>
-              </div>
-            )
-          })}
-        </div>
       </Container>
     </HelmetProvider>
   )
