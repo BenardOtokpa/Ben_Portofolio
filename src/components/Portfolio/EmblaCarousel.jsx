@@ -29,7 +29,10 @@ const EmblaCarousel = (props) => {
           {slides.map((slide) => (
             <div className="embla__slide" key={slide.id}>
               <div className="slide-content">
-                <div className="slide-title">{slide.title}</div>
+                <div className="slide-text">
+                  <h3 className="slide-title">{slide.title}</h3>
+                  <div className="slide-description">{slide.description}</div>
+                </div>
 
                 <img
                   className="embla__slide__img"

@@ -19,7 +19,7 @@ const Portfolio = () => {
     }
   }, [])
   const OPTIONS = {}
-  const SLIDE_COUNT = 6
+
   const SLIDES = SLIDE
 
   return (

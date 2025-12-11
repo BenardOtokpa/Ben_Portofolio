@@ -260,19 +260,43 @@
 }
 
 /* --- Title at Top of Image --- */
-.slide-title {
+.slide-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0.8rem 1rem;
-  background: rgba(0, 0, 0, 0.45);
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 600;
+  top: 1.5rem;  // distance from top
+  left: 1.5rem; // align left
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;  // space between title & description
+  max-width: 70%; // prevent overflowing
   z-index: 3;
-  backdrop-filter: blur(3px);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.4s ease;
+  pointer-events: none;
+  text-align: left;
 }
+
+.slide-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.slide-description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Hover effect to reveal text */
+.embla__slide:hover .slide-text {
+  opacity: 5;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
 
 /* --- Buttons Bottom Left/Right --- */
 .slide-buttons {
@@ -320,4 +344,42 @@
   width: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+/* —————— HOVER REVEAL FOR TITLE & BUTTONS —————— */
+
+.slide-title,
+.slide-buttons {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.embla__slide:hover .slide-title,
+.embla__slide:hover .slide-buttons {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Dim the image on hover */
+.embla__slide:hover .embla__slide__img {
+  filter: brightness(0.55);
+  transition: 0.4s ease;
+}
+
+/* Optional: Add a soft dark overlay for readability */
+.embla__slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 1.8rem;
+  transition: background 0.4s ease;
+  z-index: 2;
+}
+
+.embla__slide:hover::after {
+  background: rgba(0, 0, 0, 0.01);
 }
