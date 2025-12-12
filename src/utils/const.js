@@ -13,7 +13,7 @@ const SLIDE = [
     description:
       'Natours is a professional full‑stack JavaScript web application for showcasing and managing tour experiences. Built as a full‑stack app using Node.js/Express with Pug templating and HTML/CSS on the frontend, it provides a polished, server‑rendered interface and modern JavaScript-driven interactions.',
     github: 'https://github.com/BenardOtokpa/natours-app',
-    live: 'https://your-taskmanager-live.com',
+    live: 'https://natours-app-psi.vercel.app/',
   },
   {
     id: 2,
