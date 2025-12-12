@@ -81,7 +81,7 @@ const SideBar = () => {
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/benard-otokpa-5a126573/"
+            href="https://www.linkedin.com/in/otokpabenard/"
             target="_blank"
             rel="noreferrer"
           >
@@ -107,7 +107,7 @@ const SideBar = () => {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/benzy3_16/"
+            href="https://www.instagram.com/benzy_316/"
             rel="noreferrer"
             target="_blank"
           >
@@ -119,11 +119,7 @@ const SideBar = () => {
           </a>
         </li>
         <li>
-          <a
-            href="https://twitter.com/Am_b3nzY"
-            rel="noreferrer"
-            target="_blank"
-          >
+          <a href="https://x.com/BenzY_316" rel="noreferrer" target="_blank">
             <FontAwesomeIcon
               icon={faTwitter}
               color="#4d4d4e"
