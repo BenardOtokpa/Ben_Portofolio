@@ -1,6 +1,7 @@
 import React from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import ClassNames from 'embla-carousel-class-names'
+import AutoScroll from 'embla-carousel-auto-scroll'
 import {
   NextButton,
   PrevButton,
@@ -55,7 +56,7 @@ const EmblaCarousel = (props) => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    GitHub
+                    GitHub Repo
                   </a>
                 </div>
               </div>

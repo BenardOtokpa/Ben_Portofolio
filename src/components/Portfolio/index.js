@@ -18,7 +18,7 @@ const Portfolio = () => {
       clearTimeout(timer)
     }
   }, [])
-  const OPTIONS = {}
+  const OPTIONS = { loop: true }
 
   const SLIDES = SLIDE
 
@@ -27,7 +27,7 @@ const Portfolio = () => {
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
-          <title> Portfolio | {meta.title} </title>
+          <title> Projects | {meta.title} </title>
           <meta name="description" content={meta.description} />
         </Helmet>
         <Row className="mb-5 mt-3 pt-md-3">
@@ -36,7 +36,19 @@ const Portfolio = () => {
               <h1 className="display-4 mb-4">
                 <AnimatedLetters
                   letterClass={letterClass}
-                  strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+                  strArray={[
+                    'M',
+                    'y',
+                    ' ',
+                    'P',
+                    'r',
+                    'o',
+                    'j',
+                    'e',
+                    'c',
+                    't',
+                    's',
+                  ]}
                   idx={15}
                 />
               </h1>

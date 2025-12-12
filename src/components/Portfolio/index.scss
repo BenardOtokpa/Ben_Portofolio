@@ -1,15 +1,17 @@
 .About-header {
-  // background-color: red;
-  width: 82%;
+  width: 100%;
   height: 100%;
-  margin-left: 180px;
+  margin-left: 0;
+  padding: 1rem;
+  overflow-x: hidden;
   overflow-y: auto;
+  position: relative;
 
   .text-zone {
     position: absolute;
     left: 5%;
     top: 11%;
-    transform: translateY(-50%);
+    // transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
   }
@@ -131,13 +133,16 @@
 }
 
 .embla-wrapper {
-  margin-top: 15rem;
+  margin-top: 16rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .embla {
   max-width: 100%;
   height: 100%;
   margin: auto;
-  --slide-height: 60rem;
+  --slide-height: 55rem;
   --slide-spacing: 1rem;
   --slide-size: 70%;
 }
@@ -158,7 +163,7 @@
 .embla__slide__img {
   border-radius: 1.8rem;
   display: block;
-  height: var(--slide-height);
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
@@ -262,11 +267,11 @@
 /* --- Title at Top of Image --- */
 .slide-text {
   position: absolute;
-  top: 1.5rem;  // distance from top
+  top: 1.5rem; // distance from top
   left: 1.5rem; // align left
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;  // space between title & description
+  gap: 0.5rem; // space between title & description
   max-width: 70%; // prevent overflowing
   z-index: 3;
   opacity: 0;
@@ -284,7 +289,7 @@
 }
 
 .slide-description {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #fff;
   line-height: 1.4;
@@ -292,11 +297,10 @@
 
 /* Hover effect to reveal text */
 .embla__slide:hover .slide-text {
-  opacity: 5;
+  opacity: 9;
   transform: translateX(0);
   pointer-events: auto;
 }
-
 
 /* --- Buttons Bottom Left/Right --- */
 .slide-buttons {
@@ -382,4 +386,59 @@
 
 .embla__slide:hover::after {
   background: rgba(0, 0, 0, 0.01);
+}
+
+@media (max-width: 768px) {
+  .text-zone {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 32px !important;
+    line-height: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .embla {
+    --slide-size: 85%;
+    --slide-height: 45rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .embla {
+    --slide-size: 100%;
+    --slide-height: 32rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .embla {
+    --slide-height: 32rem;
+  }
+}
+@media (max-width: 768px) {
+  .slide-title {
+    font-size: 1.6rem;
+  }
+
+  .slide-description {
+    font-size: 1.4rem;
+  }
+
+  .slide-btn {
+    padding: 0.6rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .embla-wrapper {
+    margin-top: 15rem;
+  }
 }

@@ -97,7 +97,7 @@
 
     a.portfolio-link {
       &:after {
-        content: 'PORTFOLIO';
+        content: 'PROJECTS';
       }
     }
 
@@ -140,26 +140,26 @@
   display: none;
 }
 
-
 @media screen and (max-width: 1200px) {
-  .nav-bar { 
+  .nav-bar {
     background: transparent;
     position: initial;
     height: auto;
     min-height: auto;
 
-     ul, nav {
+    ul,
+    nav {
       display: none;
-     }
-     .logo img{
+    }
+    .logo img {
       height: 25px; /* Adjust the height to match the hamburger icon */
       width: auto;
       min-height: auto;
-     }
-     .sub-logo{
+    }
+    .sub-logo {
       display: none;
-     }
-     nav {
+    }
+    nav {
       width: 100%;
       top: 0;
       left: 0;
@@ -191,15 +191,14 @@
       a svg {
         opacity: 1 !important;
       }
-     }
+    }
 
-     .hamburger-icon,
-     .close-icon {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        display: block;
-     }
+    .hamburger-icon,
+    .close-icon {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: block;
+    }
   }
 }
-

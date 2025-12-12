@@ -11,7 +11,6 @@ import {
   faEnvelope,
   faSuitcase,
   faGear,
-  
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
@@ -58,7 +57,7 @@ const SideBar = () => {
         <NavLink
           activeclassname="active"
           className="portfolio-link"
-          to="/portfolio"
+          to="/projects"
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
@@ -71,12 +70,13 @@ const SideBar = () => {
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
-        <FontAwesomeIcon 
+        <FontAwesomeIcon
           onClick={() => setShowNav(false)}
           icon={faClose}
           color="#fd5c5c"
           size="3x"
-          className='close-icon' />
+          className="close-icon"
+        />
       </nav>
       <ul>
         <li>
@@ -132,12 +132,13 @@ const SideBar = () => {
           </a>
         </li>
       </ul>
-      <FontAwesomeIcon 
-          onClick={() => setShowNav(true)}
-          icon={faBars}
-          color="#07bcfb"
-          size="3x"
-          className='hamburger-icon' />
+      <FontAwesomeIcon
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="#07bcfb"
+        size="3x"
+        className="hamburger-icon"
+      />
     </div>
   )
 }
