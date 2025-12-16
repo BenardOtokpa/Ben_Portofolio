@@ -69,7 +69,7 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             Contact Me
           </Link>
-          <Link to="https://drive.google.com/uc?export=download&id=1LbnDqDD26IdJBczGPEP-qGEGcnW-rutq"  className="resume">
+          <Link to="https://drive.google.com/uc?export=download&id=1lXB3tGBPGYXxz8wiv9CV6hhDmK26ofbN"  className="resume">
             Resume
           </Link>
         </div >
